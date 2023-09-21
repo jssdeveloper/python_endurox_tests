@@ -1,0 +1,6 @@
+1. RUN TRANSACTION: $ uvicorn main:app --host 0.0.0.0 --port 3100 --reload
+
+
+
+TESTS:
+1. test : Create Transsaction. RUN $ wrk -t8 -c20 -d20s -s create.lua http://127.0.0.1:3100/create_transaction
